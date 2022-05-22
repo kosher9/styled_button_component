@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import styled from 'styled-components';
 
 function App() {
+
+  const StyleButton = styled.div`
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  `;
+
+// Think about how you will style your components
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <StyleButton>
+        <h1>Hello World!</h1>
+      </StyleButton>
     </div>
   );
 }
